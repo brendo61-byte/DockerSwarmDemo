@@ -3,8 +3,8 @@ import time
 
 app = Flask(__name__)
 
-clientIPs = ["10.116.0.12", "10.116.0.5", "10.116.0.8", "10.116.0.9", "10.116.0.7"]
-# clientIPs = ["10.116.0.12", "10.116.0.5"]
+# clientIPs = ["10.116.0.12", "10.116.0.5", "10.116.0.8", "10.116.0.9", "10.116.0.7"]
+clientIPs = ["10.116.0.12", "10.116.0.5", "10.116.0.8"]
 
 RESULTS = []
 
@@ -24,15 +24,15 @@ def display():
 
     answers = {"time": avgTime, "drops": fails}
 
-    timeDelta = start-end
+    timeDelta = end-start
 
     totalPackets = len(clientIPs) * 50 * 100
 
     print("\n\nTest Complete!\nAverage response time from server: {:.4f} mS".format(answers["time"]))
     print("Total requests processed: {}".format(totalPackets))
-    print("{}% of requests were dropped\n\n".format((answers["drops"] / totalPackets) * 100))
+    print("{}% of requests were dropped".format((answers["drops"] / totalPackets) * 100))
     print("Total time for test: {} seconds".format(timeDelta))
-    print("Request Throughput: {} requests/second".format(totalPackets / timeDelta))
+    print("Request Throughput: {} requests/second\n\n".format(totalPackets / timeDelta))
 
 
 @app.route('/results', methods=["POST"])
