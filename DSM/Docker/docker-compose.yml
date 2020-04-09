@@ -46,7 +46,7 @@ services:
     restart: always
     hostname: db
     networks:
-      AWS_net:
+      docker_demo:
         ipv4_address: 172.28.1.7
     environment:
       MYSQL_ROOT_PASSWORD: example
