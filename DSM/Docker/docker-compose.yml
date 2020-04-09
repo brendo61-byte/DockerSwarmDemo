@@ -6,7 +6,7 @@ services:
     container_name: data_api
     restart: always
     hostname: data_api
-    build: ./data_Entry_App/
+    build: ./Data_Entry_App/
     networks:
       docker_demo:
         ipv4_address: 172.28.1.1
