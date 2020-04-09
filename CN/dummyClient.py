@@ -4,7 +4,7 @@ import requests
 import random
 import time
 
-URL = "http://0.0.0.0/data"
+URL = "http://10.116.0.10/data"
 HITS = 100
 THREADS = 5
 

@@ -6,7 +6,7 @@ import requests
 
 from threading import Thread
 
-MASTER_CONTROLLER_IP = "0.0.0.0"
+MASTER_CONTROLLER_IP = "10.116.0.4"
 
 PORT = 5001
 

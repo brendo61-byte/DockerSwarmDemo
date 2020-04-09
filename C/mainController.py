@@ -4,7 +4,7 @@ import os
 from receiverApp import app, clientIPs, RESULTS
 from threading import Thread
 
-dockerIP = "0.0.0.0"
+dockerIP = "10.116.0.10"
 PORT = 5000
 
 

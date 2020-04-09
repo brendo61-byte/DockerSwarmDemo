@@ -3,7 +3,7 @@ import time
 
 app = Flask(__name__)
 
-clientIPs = ["0.0.0.0"]
+clientIPs = ["10.116.0.12"]
 
 RESULTS = []
 
