@@ -1,40 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db78935c-8a06-4926-baf8-30c5d2539c48" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mainController.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/receiverApp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CN/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CN/clientController.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CN/dummyClient.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CN/m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSM/Docker/DataBase/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSM/Docker/DataBase/m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSM/Docker/Data_Entry_App/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSM/Docker/Data_Entry_App/app.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSM/Docker/Data_Entry_App/dataApp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSM/Docker/Data_Entry_App/m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSM/Docker/Data_Entry_App/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSM/Docker/Data_Entry_App/run.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSM/Docker/Docker_Controller/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSM/Docker/Docker_Controller/app.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSM/Docker/Docker_Controller/controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSM/Docker/Docker_Controller/m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSM/Docker/Docker_Controller/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSM/Docker/Docker_Controller/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSM/Docker/Docker_Controller/run.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSM/Docker/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSM/Docker/m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSM/Docker/models.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSM/Docker/nGinX/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSM/Docker/nGinX/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSM/Docker/seed.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSM/Docker_Manager/Test_Manager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../DSM/Docker_Manager/m" afterDir="false" />
-    </list>
+    <list default="true" id="db78935c-8a06-4926-baf8-30c5d2539c48" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
