@@ -30,7 +30,7 @@ def display():
 
     print("\n\nTest Complete!\nAverage response time from server: {:.4f} mS".format(answers["time"]))
     print("Total requests processed: {}".format(totalPackets))
-    print("{}% of requests were dropped".format((answers["drops"] / totalPackets) * 100))
+    print("{:.4f}% of requests were dropped".format((answers["drops"] / totalPackets) * 100))
     print("Total time for test: {:.4f} seconds".format(timeDelta))
     print("Request Throughput: {:.4f} requests/second\n\n".format(totalPackets / timeDelta))
 
