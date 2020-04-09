@@ -1,1 +1,1 @@
-python clientController.py
+python clientController.py &
