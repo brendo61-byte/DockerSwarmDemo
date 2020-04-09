@@ -1,0 +1,9 @@
+click==7.1.1
+Flask==1.1.2
+itsdangerous==1.1.0
+Jinja2==2.11.1
+MarkupSafe==1.1.1
+peewee==3.13.2
+PyMySQL==0.9.3
+uWSGI==2.0.18
+Werkzeug==1.0.1
