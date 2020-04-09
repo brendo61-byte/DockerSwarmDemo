@@ -26,10 +26,13 @@ def display():
 
     timeDelta = start-end
 
+    totalPackets = len(clientIPs) * 50 * 100
+
     print("\n\nTest Complete!\nAverage response time from server: {:.4f} mS".format(answers["time"]))
-    print("{}% of requests were dropped\n\n".format((answers["drops"] / len(clientIPs) * 50 * 100) * 100))
+    print("Total requests processed: {}".format(totalPackets))
+    print("{}% of requests were dropped\n\n".format((answers["drops"] / totalPackets) * 100))
     print("Total time for test: {} seconds".format(timeDelta))
-    print("Request Throughput: {} requests/second".format((len(clientIPs) * 50 * 100) / timeDelta))
+    print("Request Throughput: {} requests/second".format(totalPackets / timeDelta))
 
 
 @app.route('/results', methods=["POST"])
