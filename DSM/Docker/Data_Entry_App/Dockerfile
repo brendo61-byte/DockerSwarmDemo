@@ -9,7 +9,7 @@ WORKDIR /
 
 
 ENV db_name=IoT
-ENV db_host=db
+ENV db_host=134.122.17.7
 ENV db_port=3306
 ENV db_user=root
 ENV db_password=example
