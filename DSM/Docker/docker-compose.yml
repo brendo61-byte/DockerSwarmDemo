@@ -29,16 +29,16 @@ services:
       - models.env
 
 
-  nginx:
-    build: ./nGinX/
-    restart: always
-    hostname: nginx
-    container_name: nginxIoT
-    networks:
-      docker_demo:
-        ipv4_address: 172.28.1.2
-    ports:
-      - "80:80"
+#  nginx:
+#    build: ./nGinX/
+#    restart: always
+#    hostname: nginx
+#    container_name: nginxIoT
+#    networks:
+#      docker_demo:
+#        ipv4_address: 172.28.1.2
+#    ports:
+#      - "80:80"
 
   db:
     container_name: db
