@@ -2,18 +2,18 @@ version: '3.3'
 
 services:
 
-  data_api:
-    container_name: data_api
-    restart: always
-    hostname: data_api
-    build: ./Data_Entry_App/
-    networks:
-      docker_demo:
-        ipv4_address: 172.28.1.1
-    expose:
-      - 8801
-    env_file:
-      - models.env
+#  data_api:
+#    container_name: data_api
+#    restart: always
+#    hostname: data_api
+#    build: ./Data_Entry_App/
+#    networks:
+#      docker_demo:
+#        ipv4_address: 172.28.1.1
+#    expose:
+#      - 8801
+#    env_file:
+#      - models.env
 
   controller_api:
     container_name: controller_api
@@ -29,16 +29,16 @@ services:
       - models.env
 
 
-  nginx:
-    build: ./nGinX/
-    restart: always
-    hostname: nginx
-    container_name: nginxIoT
-    networks:
-      docker_demo:
-        ipv4_address: 172.28.1.2
-    ports:
-      - "80:80"
+#  nginx:
+#    build: ./nGinX/
+#    restart: always
+#    hostname: nginx
+#    container_name: nginxIoT
+#    networks:
+#      docker_demo:
+#        ipv4_address: 172.28.1.2
+#    ports:
+#      - "80:80"
 
   db:
     container_name: db
