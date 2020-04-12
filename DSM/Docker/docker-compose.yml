@@ -2,52 +2,11 @@ version: '3.3'
 
 services:
 
-#  data_api:
-#    container_name: data_api
-#    restart: always
-#    hostname: data_api
-#    build: ./Data_Entry_App/
-#    networks:
-#      docker_demo:
-#        ipv4_address: 172.28.1.1
-#    expose:
-#      - 8801
-#    env_file:
-#      - models.env
-
-#  controller_api:
-#    container_name: controller_api
-#    restart: always
-#    hostname: controller_api
-#    build: ./Docker_Controller/
-#    networks:
-#      docker_demo:
-#        ipv4_address: 172.28.1.4
-#    expose:
-#      - 8802
-#    env_file:
-#      - models.env
-
-
-#  nginx:
-#    build: ./nGinX/
-#    restart: always
-#    hostname: nginx
-#    container_name: nginxIoT
-#    networks:
-#      docker_demo:
-#        ipv4_address: 172.28.1.2
-#    ports:
-#      - "80:80"
-
   db:
     container_name: db
     build: ./DataBase/
     restart: always
     hostname: db
-    networks:
-      docker_demo:
-        ipv4_address: 172.28.1.7
     environment:
       MYSQL_ROOT_PASSWORD: example
       MYSQL_USER: root
@@ -55,10 +14,3 @@ services:
       MYSQL_DATABASE: IoT
     ports:
       - "3306:3306"
-
-networks:
-  docker_demo:
-    ipam:
-      driver: default
-      config:
-        - subnet: 172.28.0.0/16
