@@ -4,7 +4,7 @@ import os
 from receiverApp import app, clientIPs, RESULTS
 from threading import Thread
 
-dockerIP = "10.116.0.10"
+dockerIP = "134.122.17.7"
 PORT = 5000
 
 
@@ -30,16 +30,16 @@ def clients():
 def dockerCompose():
     print("Starting the network...")
 
-    print("Cleaning testing environment")
+    # print("Cleaning testing environment")
 
-    x = clean()
-
-    if x.status_code == 200:
-        print("... environment ready")
-
-    else:
-        print("WARNING: environment could not be cleaned!")
-        exit()
+    # x = clean()
+    #q
+    # if x.status_code == 200:
+    #     print("... environment ready")
+    #
+    # else:
+    #     print("WARNING: environment could not be cleaned!")
+    #     exit()
 
     print("Spawning clients")
     print("... using default client settings")

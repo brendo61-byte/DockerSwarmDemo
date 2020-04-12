@@ -9,10 +9,10 @@ WORKDIR /
 
 
 ENV db_name=IoT
-ENV db_host=134.122.17.7
-ENV db_port=3306
-ENV db_user=root
-ENV db_password=example
+ENV db_host=db-mysql-nyc1-84974-do-user-7305389-0.a.db.ondigitalocean.com
+ENV db_port=25060
+ENV db_user=doadmin
+ENV db_password=op3kubspwhry461c
 
 RUN pip install -r requirements.txt
 RUN chmod +x m
