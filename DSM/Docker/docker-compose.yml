@@ -6,7 +6,6 @@ services:
     container_name: db
     build: ./DataBase/
     restart: always
-    hostname: db
     environment:
       MYSQL_ROOT_PASSWORD: example
       MYSQL_USER: root

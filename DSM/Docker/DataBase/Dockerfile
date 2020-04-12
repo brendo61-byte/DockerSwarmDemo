@@ -1,4 +1,4 @@
-FROM mysql:5.6
+FROM mysql
 ADD m /
 WORKDIR /
 RUN chmod +x m
