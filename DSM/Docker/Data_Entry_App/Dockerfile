@@ -14,8 +14,6 @@ ENV db_port=3306
 ENV db_user=root
 ENV db_password=example
 
-EXPOSE 8801/tcp
-
 RUN pip install -r requirements.txt
 RUN chmod +x m
 
