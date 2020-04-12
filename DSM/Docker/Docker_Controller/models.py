@@ -2,7 +2,7 @@ import peewee
 import os
 
 db_name = os.environ.get("db_name", "IoT")
-db_host = os.environ.get("db_host", "db")
+db_host = os.environ.get("db_host", "134.122.17.7")
 db_post = int(os.environ.get("db_port", "3306"))
 db_user = os.environ.get("db_user", "root")
 db_paswd = os.environ.get("db_password", "example")
