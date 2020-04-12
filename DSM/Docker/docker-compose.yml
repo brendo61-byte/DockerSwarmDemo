@@ -15,18 +15,18 @@ services:
 #    env_file:
 #      - models.env
 
-  controller_api:
-    container_name: controller_api
-    restart: always
-    hostname: controller_api
-    build: ./Docker_Controller/
-    networks:
-      docker_demo:
-        ipv4_address: 172.28.1.4
-    expose:
-      - 8802
-    env_file:
-      - models.env
+#  controller_api:
+#    container_name: controller_api
+#    restart: always
+#    hostname: controller_api
+#    build: ./Docker_Controller/
+#    networks:
+#      docker_demo:
+#        ipv4_address: 172.28.1.4
+#    expose:
+#      - 8802
+#    env_file:
+#      - models.env
 
 
 #  nginx:
