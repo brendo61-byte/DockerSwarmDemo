@@ -53,8 +53,8 @@ services:
       MYSQL_USER: root
       MYSQL_HOST: localhost
       MYSQL_DATABASE: IoT
-    expose:
-      - 3306
+    ports:
+      - "3306:3306"
 
 networks:
   docker_demo:
