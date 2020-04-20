@@ -1,0 +1,35 @@
+version: '3.3'
+
+services:
+
+  data_api:
+    build: ./data_api/
+    hostname: data_api
+    container_name: data_api
+    restart: always
+    #    networks:
+    #      docker_demo:
+    #        ipv4_address: 172.28.1.1
+    expose:
+      - 8801
+    env_file:
+      - models.env
+
+
+  nginx:
+    build: ./nginx/
+    hostname: nginxIoT
+    container_name: nginxIoT
+    restart: always
+    #    networks:
+    #      docker_demo:
+    #        ipv4_address: 172.28.1.2
+    ports:
+      - "80:80"
+
+#networks:
+#  docker_demo:
+#    ipam:
+#      driver: default
+#      config:
+#        - subnet: 172.28.0.0/16
