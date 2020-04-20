@@ -4,9 +4,9 @@ __pycache__/
 *$py.class
 .idea/
 
-C/.idea/
+c/.idea/
 
-# C extensions
+# c extensions
 *.so
 
 # Distribution / packaging

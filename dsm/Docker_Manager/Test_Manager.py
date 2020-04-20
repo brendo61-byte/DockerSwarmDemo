@@ -4,7 +4,7 @@ import requests
 
 PORT = 5002
 
-PATH = "/Users/brendo/repos/CSU/DockerSwarmDemo/DSM/Docker"
+PATH = "/Users/brendo/repos/CSU/DockerSwarmDemo/dsm/docker"
 
 app = Flask(__name__)
 
