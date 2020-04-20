@@ -26,4 +26,3 @@ def dataPush():
         except Exception as e:
             logging.exception("Error has occurred trying to save data in the data-base.\nException: {}\nTraceBack: {}".format(e, traceback.format_exc()))
             return jsonify(userMessage="Package Failed To Reach Data-Base"), 400
-© 2020 GitHub, Inc.
