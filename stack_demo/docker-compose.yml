@@ -6,6 +6,7 @@ services:
     build: ./data_api/
     hostname: data_api
     container_name: data_api
+    image: 127.0.0.1:5000/stackdemo
     restart: always
     #    networks:
     #      docker_demo:
@@ -20,6 +21,7 @@ services:
     build: ./nginx/
     hostname: nginxIoT
     container_name: nginxIoT
+    image: 127.0.0.1:5000/stackdemo
     restart: always
     #    networks:
     #      docker_demo:
