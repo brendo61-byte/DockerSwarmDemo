@@ -2,14 +2,18 @@ version: '3.3'
 
 services:
 
-  db:
-    container_name: db
-    build: ./DataBase/
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: example
-      MYSQL_USER: root
-      MYSQL_HOST: localhost
-      MYSQL_DATABASE: IoT
+  data_api:
+    image: 127.0.0.1:5000/stackdemo
+    build: .
+    hostname: data_api
+    container_name: data_api
+    expose:
+      - 8801
+
+  nginx:
+    image: 127.0.0.1:5000/stackdemo
+    build: .
+    hostname: nginx
+    container_name: nginx
     ports:
-      - "3306:3306"
+      - "80:80"
