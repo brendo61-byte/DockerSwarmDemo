@@ -3,7 +3,7 @@ version: '3.3'
 services:
 
   data_api:
-    image: 127.0.0.1:5000/stackdemo
+    image: 127.0.0.1:5000/root/DockerSwarmDemo/DSM/Docker/Data_Entry_App
     build: .
     hostname: data_api
     container_name: data_api
@@ -11,7 +11,7 @@ services:
       - 8801
 
   nginx:
-    image: 127.0.0.1:5000/stackdemo
+    image: 127.0.0.1:5000/root/DockerSwarmDemo/DSM/Docker/nGinX
     build: .
     hostname: nginx
     container_name: nginx
