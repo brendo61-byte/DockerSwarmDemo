@@ -25,4 +25,4 @@ def dataPush():
             return jsonify(userMessage="Package Received"), 200
         except Exception as e:
             logging.exception("Error has occurred trying to save data in the data-base.\nException: {}\nTraceBack: {}".format(e, traceback.format_exc()))
-            return jsonify(userMessage="Package Failed To Reach Data-Base"), 400
+            return jsonify(userMessage="Package Failed To Reac h Data-Base"), 400
