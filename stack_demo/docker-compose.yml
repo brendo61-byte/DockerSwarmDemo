@@ -4,7 +4,7 @@ services:
 
   data_api:
     build: ./data_api/
-    image: 127.0.0.1:5000/stack_demo #stackdemo_data_api
+    image: stackdemo_data_api
     expose:
       - 8801
     env_file:
@@ -13,6 +13,6 @@ services:
 
   nginx:
     build: ./nginx/
-    image: 127.0.0.1:5000/stack_demo #stackdemo_nginx
+    image: stackdemo_nginx
     ports:
       - "80:80"
