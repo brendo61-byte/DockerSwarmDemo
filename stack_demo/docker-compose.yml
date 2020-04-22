@@ -4,7 +4,7 @@ services:
 
   data_api:
     build: ./data_api/
-     image: stackdemo_data_api:1.0
+    image: stackdemo_data_api:1.0
     expose:
       - 8801
     env_file:
