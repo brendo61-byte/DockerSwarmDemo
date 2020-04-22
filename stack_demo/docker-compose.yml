@@ -3,9 +3,10 @@ version: '3.3'
 services:
 
   data_api:
-    build: ./data_api/
+    #build: ./data_api/
     # image: stackdemo_data_api:1.0
-    image: 127.0.0.1:5000/docker_swarm_demo/stack_demo
+    build: .
+    image: 127.0.0.1:5000/docker_swarm_demo/stack_demo/data_api
     expose:
       - 8801
     env_file:
@@ -13,8 +14,9 @@ services:
 
 
   nginx:
-    build: ./nginx/
+    #build: ./nginx/
     # image: stackdemo_nginx:1.0
-    image: 127.0.0.1:5000/docker_swarm_demo/stack_demo
+    build: .
+    image: 127.0.0.1:5000/docker_swarm_demo/stack_demo/nginx
     ports:
       - "80:80"
