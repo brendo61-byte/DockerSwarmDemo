@@ -3,10 +3,10 @@ version: '3.3'
 services:
 
   data_api:
-    build: ./data_api/
+    # build: ./data_api/
     hostname: data_api
     container_name: data_api
-    # image: 127.0.0.1:5000/root/docker_swarm_demo/stack_demo
+    image: stackdemo_data_api
     restart: always
     #    networks:
     #      docker_demo:
@@ -18,10 +18,10 @@ services:
 
 
   nginx:
-    build: ./nginx/
+    # build: ./nginx/
     hostname: nginxIoT
     container_name: nginxIoT
-    # image: 127.0.0.1:5000/root/docker_swarm_demo/stack_demo
+    image: stackdemo_nginx
     restart: always
     #    networks:
     #      docker_demo:
