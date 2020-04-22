@@ -3,14 +3,8 @@ version: '3.3'
 services:
 
   data_api:
-    # build: ./data_api/
-    hostname: data_api
-    container_name: data_api
-    image: stackdemo_data_api
-    restart: always
-    #    networks:
-    #      docker_demo:
-    #        ipv4_address: 172.28.1.1
+    build: ./data_api/
+    image: 127.0.0.1:5000/root/docker_swarm_demo/stack_demo #stackdemo_data_api
     expose:
       - 8801
     env_file:
@@ -18,20 +12,7 @@ services:
 
 
   nginx:
-    # build: ./nginx/
-    hostname: nginxIoT
-    container_name: nginxIoT
-    image: stackdemo_nginx
-    restart: always
-    #    networks:
-    #      docker_demo:
-    #        ipv4_address: 172.28.1.2
+    build: ./nginx/
+    image: 127.0.0.1:5000/root/docker_swarm_demo/stack_demo
     ports:
       - "80:80"
-
-#networks:
-#  docker_demo:
-#    ipam:
-#      driver: default
-#      config:
-#        - subnet: 172.28.0.0/16
